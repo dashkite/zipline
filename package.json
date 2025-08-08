@@ -9,7 +9,8 @@
     "zipline": "./build/node/src/bin/zipline"
   },
   "scripts": {
-    "test": "genie test"
+    "test": "genie test",
+    "release": "genie release"
   },
   "dependencies": {
     "@dashkite/joy": "^0.12.16",
@@ -25,6 +26,8 @@
     "@dashkite/genie-clean": "^0.13.10",
     "@dashkite/genie-coffee": "^0.13.11",
     "@dashkite/genie-media": "^0.12.12",
+    "@dashkite/genie-module": "^0.5.40",
+    "@dashkite/genie-release": "^0.5.0",
     "mocha": "^10.2.0"
   },
   "author": "Your Name",
