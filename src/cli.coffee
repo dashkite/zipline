@@ -1,0 +1,27 @@
+import FS from 'node:fs'
+import { Command } from 'commander'
+import YAML from 'yaml'
+import sort from "./sort"
+
+program = new Command
+program
+  .name 'zipline'
+  .description 'Output layered topological sort of local NPM repos as YAML'
+  .argument '<path>', 'Directory containing repos'
+  .option '--output <file>', 'Output file (defaults to stdout)'
+  .version '1.0.0'
+
+program.parse process.argv
+options = program.opts()
+path = program.args[0]
+
+try
+  layers = sort path
+  yaml = YAML.stringify layers
+  if options.output
+    FS.writeFileSync options.output, yaml
+  else
+    console.log yaml
+catch error
+  console.error "Error: #{error.message}"
+  process.exit 1

@@ -1,0 +1,32 @@
+{
+  "name": "@dashkite/zipline",
+  "version": "0.0.0",
+  "description": "A layered topological sorter for local NPM repos. Output parallelizable batches as YAML.",
+  "files": [
+    "build/node/src"
+  ],
+  "bin": {
+    "zipline": "./build/node/src/bin/zipline"
+  },
+  "scripts": {
+    "test": "genie test"
+  },
+  "dependencies": {
+    "@dashkite/joy": "^0.12.16",
+    "coffeescript": "^2.7.0",
+    "commander": "^11.0.0",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@dashkite/amen": "^0.9.5",
+    "@dashkite/amen-console": "^0.8.5",
+    "@dashkite/assert": "^0.7.10",
+    "@dashkite/genie": "^0.20.12",
+    "@dashkite/genie-clean": "^0.13.10",
+    "@dashkite/genie-coffee": "^0.13.11",
+    "@dashkite/genie-media": "^0.12.12",
+    "mocha": "^10.2.0"
+  },
+  "author": "Your Name",
+  "license": "SEE LICENSE IN LICENSE.md"
+}

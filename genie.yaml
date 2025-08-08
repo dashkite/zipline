@@ -1,0 +1,8 @@
+coffee:
+  targets:
+    - node
+
+media:
+  targets:
+    node:
+      - glob: "test/**/*.json"

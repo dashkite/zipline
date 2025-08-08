@@ -1,0 +1,8 @@
+{
+  "name": "repoD",
+  "version": "1.0.0",
+  "dependencies": {
+    "repoB": "^1.0.0",
+    "repoC": "^1.0.0"
+  }
+}
