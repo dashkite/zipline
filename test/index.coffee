@@ -3,12 +3,7 @@ import assert from "@dashkite/assert"
 import { test, success } from "@dashkite/amen"
 import print from "@dashkite/amen-console"
 import sort from "../src/sort"
-
-scenarios =
-  linear: [["A"], ["B"], ["C"]]
-  diamond: [["A"], ["B", "C"], ["D"]]
-  independent: [["A", "B", "C"]]
-  cycle: [[ "B" ], [ "A" ]]
+import scenarios from "./scenarios"
 
 _sort = ( scenario ) ->
   sort path.join __dirname, "fixtures", scenario
