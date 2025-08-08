@@ -1,15 +1,15 @@
-import FS from 'node:fs'
-import { Command } from 'commander'
-import YAML from 'yaml'
+import FS from "node:fs"
+import { Command } from "commander"
+import YAML from "yaml"
 import sort from "./sort"
 
 program = new Command
 program
-  .name 'zipline'
-  .description 'Output layered topological sort of local NPM repos as YAML'
-  .argument '<path>', 'Directory containing repos'
-  .option '--output <file>', 'Output file (defaults to stdout)'
-  .version '1.0.0'
+  .name "zipline"
+  .description "Output layered topological sort of local NPM repos as YAML"
+  .argument "<path>", "Directory containing repos"
+  .option "-o, --output <file>", "Output file (defaults to stdout)"
+  .version "1.0.0"
 
 program.parse process.argv
 options = program.opts()
