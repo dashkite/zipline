@@ -30,6 +30,9 @@
     "@dashkite/genie-release": "^0.5.0",
     "mocha": "^10.8.2"
   },
-  "author": "Your Name",
+  "contributors": [
+    "Dan Yoder <dan@dashkite.com>",
+    "David Harper <david@dashkite.com>"
+  ],
   "license": "SEE LICENSE IN LICENSE.md"
 }
