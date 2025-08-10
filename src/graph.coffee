@@ -2,14 +2,20 @@
 # (nodes with an path back to the given node)
 
 dependents = do ( caches = new Map ) ->
-  ( graph, node ) ->
+  ( graph, target, start, visited = new Set ) ->
     if !( caches.has graph )
       caches.set graph, {}
     cache = caches.get graph
-    cache[ node ] ?= do ->
-      result = 0
-      for _node, edges of graph when node != _node
-        result++ if node in edges
+    cache[ target ] ?= do ->
+      visited.add target
+      start ?= target
+      result = new Set
+      for node, edges of graph
+        if ( node != target ) && ( node != start )
+          if ( target in edges )
+            result.add node
+            if !( visited.has node )
+              result = result.union dependents graph, node, start, visited
       result
   
 # given a graph and a target node, determine whether there's 
@@ -50,4 +56,4 @@ decycle = ( graph ) ->
       edge for edge in edges when !( visited.has edge )
   result
 
-export  { decycle }
+export  { dependents, decycle }
