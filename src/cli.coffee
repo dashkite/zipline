@@ -9,10 +9,7 @@ program
   .description "Output layered topological sort of local NPM repos as YAML"
   .argument "<path>", "Directory containing repos"
   .option "-o, --output <file>", "Output file (defaults to stdout)"
-  .option "-d, --directories <directories>", 
-    "Entry points for the dependency graph.
-      Multiple directories may be separated by '+'.",
-    ( value ) -> value.split "+"
+  .option "-f, --flatten", "Flatten result into a single layer", false
   .version "1.0.0"
 
 program.parse process.argv
@@ -20,7 +17,7 @@ options = program.opts()
 path = program.args[0]
 
 try
-  layers = sort path, options.directories
+  layers = sort path, options
   yaml = YAML.stringify layers
   if options.output
     FS.writeFileSync options.output, yaml

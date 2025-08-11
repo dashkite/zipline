@@ -1,4 +1,4 @@
 linear: [[A], [B], [C]]
 diamond: [[A], [B, C], [D]]
 independent: [[A, B, C]]
-cycle: [[ A,  B ]]
+cycle: [[ A ], [ B ]]

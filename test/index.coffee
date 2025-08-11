@@ -6,7 +6,7 @@ import sort from "../src/sort"
 import scenarios from "./scenarios"
 
 _sort = ( scenario ) ->
-  sort path.join __dirname, "fixtures", scenario
+  sort ( path.join __dirname, "fixtures", scenario ), {}
 
 verify = ( scenario ) -> ->
   assert.deepEqual scenarios[ scenario ], _sort scenario
