@@ -19,14 +19,14 @@
     "yaml": "^2.8.1"
   },
   "devDependencies": {
-    "@dashkite/amen": "^0.9.9",
-    "@dashkite/amen-console": "^0.8.9",
-    "@dashkite/assert": "^0.7.15",
-    "@dashkite/genie": "^0.20.13",
+    "@dashkite/amen": "^0.9.10",
+    "@dashkite/amen-console": "^0.8.10",
+    "@dashkite/assert": "^0.7.17",
+    "@dashkite/genie": "^0.20.14",
     "@dashkite/genie-clean": "^0.13.11",
-    "@dashkite/genie-coffee": "^0.13.13",
+    "@dashkite/genie-coffee": "^0.13.14",
     "@dashkite/genie-media": "^0.12.13",
-    "@dashkite/genie-module": "^0.5.40",
+    "@dashkite/genie-module": "^0.5.41",
     "@dashkite/genie-release": "^0.5.0",
     "@dashkite/genie-yaml": "^0.11.12",
     "mocha": "^10.8.2"
