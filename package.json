@@ -13,13 +13,13 @@
     "release": "genie release"
   },
   "dependencies": {
-    "@dashkite/joy": "^0.12.22",
+    "@dashkite/joy": "^0.12.25",
     "coffeescript": "^2.7.0",
     "commander": "^11.1.0",
-    "yaml": "^2.8.1"
+    "yaml": "^2.9.0"
   },
   "devDependencies": {
-    "@dashkite/amen": "^0.9.12",
+    "@dashkite/amen": "^0.9.15",
     "@dashkite/amen-console": "^0.8.12",
     "@dashkite/assert": "^0.7.18",
     "@dashkite/genie": "^0.20.14",
