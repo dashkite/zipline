@@ -13,22 +13,22 @@
     "release": "genie release"
   },
   "dependencies": {
-    "@dashkite/joy": "^0.12.31",
+    "@dashkite/joy": "^0.12.32",
     "coffeescript": "^2.7.0",
     "commander": "^11.1.0",
     "yaml": "^2.9.0"
   },
   "devDependencies": {
-    "@dashkite/amen": "^0.9.22",
-    "@dashkite/amen-console": "^0.8.18",
-    "@dashkite/assert": "^0.7.25",
-    "@dashkite/genie": "^0.20.19",
-    "@dashkite/genie-clean": "^0.13.18",
-    "@dashkite/genie-coffee": "^0.13.21",
-    "@dashkite/genie-media": "^0.12.20",
-    "@dashkite/genie-module": "^0.5.48",
-    "@dashkite/genie-release": "^0.5.7",
-    "@dashkite/genie-yaml": "^0.11.18",
+    "@dashkite/amen": "^0.9.23",
+    "@dashkite/amen-console": "^0.8.19",
+    "@dashkite/assert": "^0.7.26",
+    "@dashkite/genie": "^0.20.20",
+    "@dashkite/genie-clean": "^0.13.19",
+    "@dashkite/genie-coffee": "^0.13.22",
+    "@dashkite/genie-media": "^0.12.21",
+    "@dashkite/genie-module": "^0.5.49",
+    "@dashkite/genie-release": "^0.5.8",
+    "@dashkite/genie-yaml": "^0.11.19",
     "mocha": "^10.8.2"
   },
   "contributors": [
