@@ -1,6 +1,6 @@
 {
   "name": "@dashkite/zipline",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "A layered topological sorter for local NPM repos. Output parallelizable batches as YAML.",
   "files": [
     "build/node/src"
